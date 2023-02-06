@@ -1,4 +1,4 @@
-etl:
+test_refactor:
   project:
     test:
       secret_name: "GCP_ADV_CRED_TEST"

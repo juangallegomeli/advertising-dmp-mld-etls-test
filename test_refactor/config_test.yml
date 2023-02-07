@@ -3,12 +3,15 @@ test_refactor:
   project_id: "ads-dmp-audiencias"
   dataset_id: "DMP_TEST"
   table_name: "DMP_CUSTOM_AUDIENCES"
+  etl:
+    path: bq_resources
+    script: test_refactor # etl_test_refactor.sql
   sanity_checks:
     path: sc_resources
     step_source:
       path: source
       steps:
-        - rule11
+        - rule1  # query_rule1.sql // rules_rule1.sql
         - rule2
         - rule3
     step_result:
@@ -17,4 +20,10 @@ test_refactor:
         - rule4
         - rule5
         - rule6
+  availability:
+    path: avail_resources
+    coverage: 0.95
+    steps:
+      script_check: valid_log_rules # valid_log_rules.sql
+      script_publish: publish_test_refactor # publish_test_refactor.sql
 

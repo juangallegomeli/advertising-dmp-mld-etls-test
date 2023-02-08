@@ -5,7 +5,7 @@ test_refactor:
   table_name: "DMP_CUSTOM_AUDIENCES"
   etl:
     path: etl_resources
-    script: test_refactor # etl_test_refactor.sql
+    script: etl_test_refactor # etl_test_refactor.sql
   sanity_checks:
     path: sc_resources
     step_source:

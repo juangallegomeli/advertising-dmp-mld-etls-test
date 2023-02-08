@@ -3,6 +3,7 @@ test_refactor:
   project_id: "ads-dmp-audiencias"
   dataset_id: "DMP_TEST"
   table_name: "DMP_CUSTOM_AUDIENCES"
+  truncate_on_write: False
   etl:
     path: etl_resources
     script: etl_test_refactor # etl_test_refactor.sql

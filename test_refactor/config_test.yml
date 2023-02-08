@@ -4,7 +4,7 @@ test_refactor:
   dataset_id: "DMP_TEST"
   table_name: "DMP_CUSTOM_AUDIENCES"
   etl:
-    path: bq_resources
+    path: etl_resources
     script: test_refactor # etl_test_refactor.sql
   sanity_checks:
     path: sc_resources

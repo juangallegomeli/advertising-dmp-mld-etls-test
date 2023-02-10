@@ -1,0 +1,10 @@
+commons_expectations:
+- expectation_type: expect_column_values_to_not_be_null
+  columns: [qty_registros]
+specific_expectations:
+- expectation_type: expect_column_min_to_be_between
+  kwargs:
+    column: qty_registros
+    min_value: 2
+
+

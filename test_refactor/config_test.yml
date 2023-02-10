@@ -13,6 +13,7 @@ test_refactor:
       path: source
       steps:
         - rule1  # query_rule1.sql // rules_rule1.sql
+        - rule2
     step_result:
       path: result
       steps:

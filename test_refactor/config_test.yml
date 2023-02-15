@@ -1,7 +1,13 @@
-test_refactor:
+x-global-config: &global-config
   secret_name: "GCP_ADV_CRED_TEST"
   project_id: "ads-dmp-audiencias"
   dataset_id: "DMP_TEST"
+  wf_control_project_id: "ads-dmp-audiencias"
+  wf_control_dataset_id: "DATA_QUALITY"
+
+
+test_refactor:
+  <<: *global-config
   table_name: "DMP_TEST_REFACTOR"
   truncate_on_write: False
   sc_table_name: "DMP_ETL_DATA_VALIDATIONS"

@@ -2,8 +2,7 @@ x-global-config: &global-config
   secret_name: "GCP_ADV_CRED_TEST"
   project_id: "ads-dmp-audiencias"
   dataset_id: "DMP_TEST"
-  wf_control_project_id: "ads-dmp-audiencias"
-  wf_control_dataset_id: "DATA_QUALITY"
+  wf_dq_table_name: "DMP_DQ_WORKFLOW_CONTROL"
 
 
 test_refactor:
